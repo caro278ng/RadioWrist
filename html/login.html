@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>Login form Design</title>
+            <link rel="stylesheet" href="../css/style.css" type="text/css">
+            <link rel="stylesheet" href="../css/style_info.css" type="text/css">
+
+         <!--Jquery-->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <!--Popper.js-->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+         <!--Bootstrap-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+        <!--Autenticación para Firebase-->
+              
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+        <script>
+        // Initialize Firebase
+            var config = {
+            apiKey: "AIzaSyDVqo1HCZTkiFKfKC35g8KtxGPVVY2b2YE",
+            authDomain: "base-de-datos-57eb6.firebaseapp.com",
+            databaseURL: "https://base-de-datos-57eb6.firebaseio.com",
+            projectId: "base-de-datos-57eb6",
+            storageBucket: "base-de-datos-57eb6.appspot.com",
+            messagingSenderId: "677877121216"
+        };
+        firebase.initializeApp(config);
+        </script> 
+
+        <script src="../js/index.js"></script>
+
+    </head>
+           
+        <body>
+                      
+            <div class="loginbox" >
+                <img src="../img/avatar.png" class="avatar">
+                    <h1>Login Here</h1>
+                    <!--Formulario-->
+                    <form id="Form-Auth">
+
+                        <div class="llenar">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+
+                        <div class="llenar">
+                            <label for="password">Password</label>
+                            <input type="password"  id="password" placeholder="Password">
+                        </div>
+                        <div style="text-align: center">
+                                <button type="submit">Login</button>
+                                    <br>
+                                    <br>
+                                    <a href="https://passwordreset.microsoftonline.com/?ru=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2freprocess%3fctx%3drQIIAY2RO2_TUACFc-PUtAGJCjFUqsRLICGkm_j9iMSQh500qUmapnkxVNexnTi2c_Ow48i_AJg6d0RiICzAhNhZOnVh4QcgxBQxdSQRCxt8w9GRzna-JwSdojMPqT8wcJOQsiwa9sxN-4vpreTu9VLIvot_qbx8G3_89cODN-fg9hDNzamNRqiHXDtlGkGqh5fg7sD3x7NMOo0D38XYSWHLsnvmevPSOETpTwBcArCMiwIrCDwjirwo8-y6UUJK0kVe1nkBWoyOICchGeoWJ0ODpSSW1nWK56xv8ZvVbOAPmE3gqR2Zv-I7Fp56p2M888-J96DQmS0UrPWVbHYBOzMjnz_o57oa7Lb5UCiP-sUynXMK4al6GERRAylOae42PZdTGypCE1ro8MeLY1-3PcyalWrQHDvzef-IG7aqk3ZolLuSq1RE0UHuBMEIcpgqsKFBc7zuCJTSKonB4CQYZlXGK2YPC1VLG080n9Nwlx3NOzlT8_lanefqod2Yea5XU2pL4r8sfCTI9YceHl0QJB6bI9u4TICfiRsUkdneTu7G9mL3YlcJ8HprbevO6v7-90dXuVfPp6vWs2TsYitdjcr2gaPK6tFCNph2Md-edNlKy2oqckvCOdkdnDQ8NYhQXXrKZugzEpyR5A8SrEjw4lrs886_vP4G0&mkt=es-ES&hosted=0&device_platform=Windows+10&username=caro278ng%40javerianacali.edu.co">Lost your password</a><br>
+                         </div>
+                    </form>  
+            </div>  
+
+            <div id="errorModal" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Error al iniciar sesión</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>El usuario o contraseña no son correctos.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            
+                                          
+        </body>
+</html>
