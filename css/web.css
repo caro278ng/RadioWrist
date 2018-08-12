@@ -1,0 +1,248 @@
+
+
+body {
+    font-family: 'Allerta', sans-serif;
+    
+}
+
+.button {
+    border-radius: 12px;
+    border: none;
+    background: #fd324e;
+    color:white;
+    padding: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    background: linear-gradient(to left, #fd324e, #ff7250);
+
+}
+
+input, textarea {
+    outline: 0;
+}
+
+input:focus, textarea:focus {
+    background: lightgray;
+}
+
+.background {
+    background-image: url('../img/background.png');
+    background-size: cover;
+}
+
+.Titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    padding-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.Titulo span {
+    text-decoration: underline;
+}
+.title-a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    height: 35px;
+    padding-left: 170px;
+    margin: 30px;
+    margin-top: 0;
+}
+
+.title-b {
+    font-size:50 px;
+    margin-bottom: 20px;
+}
+
+.manillas {
+    color: #1F313C;
+
+}
+.manillas h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+.portada {
+    color: white;
+    padding: 25px;
+    height: 500px;
+
+}
+
+.portada button {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.menu {
+    font-size: 24px;
+    display: inline-block;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu li:before {
+    content: '∘';
+    font-size: 30px;
+    line-height: 20px;
+    color: white;
+}
+.logotipo {
+    display: inline-block;
+    margin-left: 0;
+}
+
+.caja {
+    width: 800px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+
+}
+
+.contenedor {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.contenedor2 {
+    width: 800px;
+    height: 490px;
+    margin: auto;
+}
+
+.pulsera {
+    margin: 10px 10px 30px 10px;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid #1F313C;
+}
+
+.pulsera ol {
+    padding: 0;
+}
+
+.con-manilla-a {
+    padding-left: 35px;
+
+
+
+}
+
+.con-manilla-b {
+    margin-left: 460px;
+    bottom: 90px;
+}
+
+.derecha {
+    float: right;   
+}
+
+.izquierda {
+    float: left;
+}
+
+.footer {
+    background: #273b47;
+    padding: 50px 10px;
+}
+
+.contacto {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+.contacto img {
+    display: block;
+}
+
+.contacto strong {
+    display: block;
+}
+
+.contacto a {
+    color:white;
+    text-decoration:none;
+    margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.formulario {
+    display: flex;
+    width: 400px;
+    color: white;
+}
+
+.col1, .col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col1 {
+    margin-right: 20px;
+}
+
+.col2 {
+    align-items: flex-start;
+}
+
+.col2 .button {
+    margin-top: 15px;
+}
+
+.intereses label {
+    font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses {
+    margin-bottom: 10px;
+}
+
+.sexo {
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background: #273b47;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+td {
+    padding: 20px;
+}
+
+table, td, th {
+    border: 1px solid #273b47;
+    border-collapse: collapse;
+
+}
+
+.tabla {
+    margin: 50px 0;
+}
